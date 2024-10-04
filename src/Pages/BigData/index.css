@@ -1,0 +1,65 @@
+
+html, body {
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем поля */
+  height: 100%; /* Устанавливаем высоту на 100% */
+}
+.parallax-container {
+  height: 400vh;
+  background-image: url('../../images/bgDatass .jpg');
+  background-attachment: fixed; /* Создает параллакс-эффект */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+ ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        strong {
+            color: #3a3c3d;
+        }
+
+    p {
+        font-size: 20;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        
+    }
+     
+.plush {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+     border-radius: 10px;
+     text-align: justify;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+       font-family: 'Montserrat', sans-serif;
+       transition: opacity 0.5s ease-in-out;
+}
+
+
+h2, h3, p, li {
+  font-size: 1.2rem; 
+}
+
+h2 {
+  margin-bottom: 20px; 
+}
+
+h3 {
+  margin-top: 20px; 
+}
+

@@ -1,0 +1,30 @@
+/* Иконка бургер-меню */
+.menu-icon {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+
+/* Когда меню открыто */
+.navigation.open {
+  width: 200px;
+}
+
+.ant-menu {
+  transition: background-color 0.3s;
+  color: #333; /* Цвет текста по умолчанию */
+}
+
+.ant-menu-item:hover {
+  background-color: orange !important; 
+  color: #fff; /* Белый цвет текста при наведении */
+}
+
+.home-container {
+  padding: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; 
+}

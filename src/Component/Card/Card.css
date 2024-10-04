@@ -1,0 +1,51 @@
+.custom-card {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Объем */
+  padding: 20px;
+  max-width: 400px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(50px); /* Начальная позиция снизу */
+  animation: slide-up 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px; /* Минимальная ширина карточек */
+}
+
+/* Анимация появления снизу */
+@keyframes slide-up {
+  to {
+    transform: translateY(0); /* Конечное состояние анимации */
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Контент растягивается на всю оставшуюся высоту */
+}
+
+.card-text {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  word-wrap: break-word; /* Поддержка длинного текста */
+  text-align: justify;
+}
+
+/* Кнопка "Подробнее" */
+.card-button {
+  background-color: rgb(119, 94, 219);
+  border: 2px solid rgb(46, 46, 78);
+  border-radius: 20px; /* Скругленная кнопка */
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: auto; /* Прижимает кнопку к низу карточки */
+}
+
+/* При наведении кнопка становится оранжевой */
+.card-button:hover {
+  background-color: rgb(237, 160, 15);
+  color: white; /* Убедитесь, что цвет текста тоже меняется на видимый */
+}

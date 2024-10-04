@@ -1,0 +1,93 @@
+
+html, body {
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем поля */
+  height: 100%; /* Устанавливаем высоту на 100% */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); 
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    width: 80%;
+    padding: 50px;
+}
+
+.text {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1.5s forwards;
+    margin-left: 10px;
+}
+
+.parallax-section {
+    height: 100vh;
+    position: relative;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+     transition: background-color 0.5s ease;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    opacity: 1;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+     margin-top: -400px; 
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(-50px); /* Исчезновение вверх */
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* Появление */
+}
+.images, .image {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transform: translateX(100%) rotate(15deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: slideInFromRight 1.5s forwards;
+    position: relative;
+}
+
+.images {
+    background-image: url('../../images/college.jpg'); 
+}
+
+.image {
+    background-image: url('../../images/i am.jpg'); 
+}
+
+.image:hover, .images:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    to {
+      
+       transform: translateX(0) rotate(0deg); 
+    }
+}
